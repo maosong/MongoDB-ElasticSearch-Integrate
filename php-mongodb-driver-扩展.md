@@ -4,5 +4,31 @@ PHP7 之前我们通过 pecl 扩展 [mongo](http://pecl.php.net/package/mongo) �
 
 ## 安装
 
+$ versionPhpExt=1.1.9
+
+$ wget http:\/\/pecl.php.net\/get\/mongodb-**$**{versionPhpExt}.tgz
+
+$ tar -zxf mongodb-**$**{versionPhpExt}.tgz
+
+$ rm -f mongodb-**$**{versionPhpExt}.tgz
+
+$ rm -f package\*.xml
+
+$ cd mongodb-**$**{versionPhpExt}
+
+$ phpize
+
+$ .\/configure
+
+$ make -j 8
+
+$ make install
+
+$ cd ..
+
+$ rm -Rf mongodb-**$**{versionPhpExt}
+
+$ echo 'extension=mongodb.so' &gt; \/etc\/php\/mods-available\/mongodb.ini
+
 
 
