@@ -4,6 +4,8 @@ PHP7 之前我们通过 pecl 扩展 [mongo](http://pecl.php.net/package/mongo) �
 
 ## 安装
 
+$ versionPhpExt=1.1.9
+
 \`\`\`bash
 
 $ versionPhpExt=1.1.9
