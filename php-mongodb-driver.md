@@ -2,6 +2,8 @@
 
 PHP7 之前我们通过 pecl 扩展 [mongo](http://pecl.php.net/package/mongo) 访问MongDB，但这个库目前已经停止维护并且仅支持PHP5和MongoDB3.0。原作者开发了 [mongodb](https://github.com/mongodb/mongo-php-driver) 取而代之，同时支持PHP5.4+和MongoDB2.4+，考虑到向PHP7的迁移，我们必须使用新的类库。
 
+⚠️ 注意！MongoDB Driver 使用的是长连接，因此，需要运维控制与MongoDB连接的PHP-FPM进程数量。
+
 ## 安装
 
 ```bash
